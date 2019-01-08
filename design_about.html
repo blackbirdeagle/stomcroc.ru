@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.theme.default.css">
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+
+
+    <title>Наша клиника</title>
+
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+</head>
+<body>
+
+<div class = "overlay"></div>
+
+<div class="popup usagr-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Запись на прием</div>
+    <form method = "POST" action = "">
+        <input type = "text" name = "name" placeholder = "Ваше имя*"/>
+        <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон*"/>
+        <div class="input-group date" id = "datetimepicker1">
+            <input type="text" class="form-control dateTime" name = "datetime" id = "dateTime1" placeholder = "Дата и время приема*"/>
+            <span class="input-group-addon">
+			  <span class="glyphicon glyphicon-calendar"></span>
+			</span>
+        </div>
+        <a class = "send_mess" href = "javascript:void(0);">Забронировать</a>
+    </form>
+</div>
+
+<header class = "header">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-9">
+                <a class = "show__menu" href = "javascript:void(0);"><img src = "images/mob.png" /></a>
+                <ul class = "top-menu">
+                    <a class = "close-menu" href = "javascript:void(0);">X</a>
+                    <li><a href = "">Наша клиника</a></li>
+                    <li><a href = "">Акции и скидки</a></li>
+                    <li><a href = "">Услуги</a></li>
+                    <li><a class = "active" href = "">Цены</a></li>
+                    <li><a href = "">Специалисты</a></li>
+                    <li><a href = "">Программа скидок</a></li>
+                    <li><a href = "">Контакты</a></li>
+                </ul>
+            </div>
+            <div class = "col-md-3"><a class = "for_impaired" href = "">Версия для слабовидящих</a></div>
+        </div>
+    </div>
+</header>
+
+<div class = "center__block">
+
+    <section class = "head">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-2 col-sm-4">
+                    <a class = "logo" href = "/"><img src = "images/logo.png" /></a>
+                </div>
+                <div class = "col-md-4 col-sm-8">
+                    <p class = "head__slogan">Семейная стоматология для взрослых и детей в Перово</p>
+                    <p class = "head__subhead">Добрый крокодил</p>
+                </div>
+                <div class = "col-md-3 col-sm-6">
+                    <div class = "order__wrapp">
+                        <a class = "order__button" popup-target = "usagr-pp" href = "javascript:void(0);">Записаться на прием</a>
+                    </div>
+                </div>
+                <div class = "col-md-3 col-sm-6">
+                    <div class = "top__contacts">
+                        <a href = "tel:+74959695086" class = "top__phone">+7(495)969-50-86</a>
+                        <p class = "top_addr">Москва, Перовская, д. 16,<br/>
+                            пн-сб:  09:00 - 21:00<br/>
+                            воскр:  10:00 - 18:00 </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "content">
+        <div class = "content__preview">
+            <img src = "images/p_about.png" />
+        </div>
+        <div class = container>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <ul class = "breadcrumb">
+                        <li><a href = "">Главная</a></li>
+                    </ul>
+                    <h1>Наша клиника</h1>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-8">
+                    <p>Принципы работы стоматологической клиники «Добрый крокодил»:
+                        Страх перед инструментами стоматолога, теперь в прошлом! Сегодня «стоматология» и «страх» – понятия не совместимые друг с другом. Мы в своей клинике применяем качественное и эффективное обезболивание на всех этапах лечения.</p>
+                    <p>В нашей стоматологической клинике есть все условия для отличного выполнения всех стоматологических процедур: применяются новейшие технологии, только высококачественные материалы и современное оборудование. Услуги стоматологии позволяют нашим пациентам не отчаиваться даже в самой сложной ситуации, независимо от того, что требуется. Наши технологии позволяют вернуть здоровье зубам даже после серьезных повреждений или травм. Каждый стоматолог нашей клиники постоянно совершенствует свои навыки и профессионализм. Наши специалисты представляют все современные направления стоматологии.</p>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-11">
+                    <div class = "content__text">
+                        <h3>Лечение в нашей клинике начинается с подробной консультации специалистов</h3>
+                        <p><img style = "float: left; padding: 0 27px 20px 0;" src = "images/pic2.jpg" />Большинство людей имеют несовершенные зубы: не ровный зубной ряд, , большие межзубные щели, не стандартный цвет эмали и др. к тому же, на протяжении всей жизни происходят изменения: меняется цвет зубов, нарушается целостность эмали, образуются трещины и сколы, появляется кариес. Наша стоматология «Добрый крокодил» поможет вам решить все проблемы с нарушениями зубного состава. Наши специалисты имеют огромный опыт в протезировании и в имплантации, используют современную технологию отбеливания зубов.</p>
+                        <div class = "clear"></div>
+                        <h3>Лицензии</h3>
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-2 col-sm-3 col-xs-6">
+                    <a class = "fancybox sert__item" data-fancybox-group="gallery" href = "images/sert1.jpg"><img src = "images/sert1.jpg" /></a>
+                </div>
+                <div class = "col-md-2 col-sm-3 col-xs-6">
+                    <a class = "fancybox sert__item" data-fancybox-group="gallery" href = "images/sert2.jpg"><img src = "images/sert2.jpg" /></a>
+                </div>
+                <div class = "col-md-2 col-sm-3 col-xs-6">
+                    <a class = "fancybox sert__item" data-fancybox-group="gallery" href = "images/sert3.jpg"><img src = "images/sert3.jpg" /></a>
+                </div>
+                <div class = "col-md-2 col-sm-3 col-xs-6">
+                    <a class = "fancybox sert__item" data-fancybox-group="gallery" href = "images/sert4.jpg"><img src = "images/sert4.jpg" /></a>
+                </div>
+                <div class = "col-md-2 col-sm-3 col-xs-6">
+                    <a class = "fancybox sert__item" data-fancybox-group="gallery" href = "images/sert5.jpg"><img src = "images/sert5.jpg" /></a>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-11">
+                    <h3>Безопасность и качество</h3>
+                    <p>Профессиональная гигиена полости рта включает в себя базовые и дополнительные процедуры.
+                        К базовым относятся:</p>
+                    <p>Осмотр полости рта гигиенистом. Проводится как для определения состава остальных процедур, так и для оказания консультационной помощи по вопросу правильного проведения ежедневной гигиены.
+                    </p>
+                    <p>Ультразвуковая чистка (ультразвуковой скалинг). Применяется для избавления от наддесневого и поддесневого зубного камня. Инструмент, применяемый при этой операции, совершает высокочастотные колебания со скоростью ультразвуковых волн. Обрабатываемые области орошаются водным туманом для охлаждения и передачи колебаний. Под таким воздействием камень разрыхляется и удаляется с зубной поверхности.</p>
+                    <p>Первичное отбеливание. Может проводиться как один из этапов комплексной гигиены, так и в виде самостоятельной процедуры. Зубы обрабатываются специальными составами, которые нежно очищают эмаль перед этапом полировки. После первичного отбеливания зубы приобретают свой натуральный цвет. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="slider1" class="slider">
+            <ul>
+                <li><a class = "fancybox" data-fancybox-group="gallery" href = "images/slide1.jpg"><img height = "380" src="images/slide1.jpg"  alt=""/></a></li>
+                <li><a class = "fancybox" data-fancybox-group="gallery" href = "images/slide2.jpg"><img height = "380" src="images/slide2.jpg"  alt=""/></a></li>
+                <li><a class = "fancybox" data-fancybox-group="gallery" href = "images/slide3.jpg"><img height = "380" src="images/slide3.jpg"  alt=""/></a></li>
+                <li><a class = "fancybox" data-fancybox-group="gallery" href = "images/slide4.jpg"><img height = "380" src="images/slide4.jpg"  alt=""/></a></li>
+                <li><a class = "fancybox" data-fancybox-group="gallery" href = "images/slide5.jpg"><img height = "380" src="images/slide5.jpg"  alt=""/></a></li>
+            </ul>
+        </div>
+
+
+
+        <div class = "controls">
+            <a href="javascript:void(0);" class="prev-slide"></a>
+            <a href="javascript:void(0);" class="next-slide"></a>
+        </div>
+
+
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-11">
+                    <h3>Вакансии</h3>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-7 col-sm-6">
+                    <div class = "vac__list">
+                        <div class = "vac__wrap">
+                            <a class = "vac__link" href = "javascript:void(0);">Врач-ортодонт</a>
+                            <div class = "vac__desc">
+                                <p>- Высшее образование</p>
+                                <p>- Уверенный пользователь пакет Microsoft Office‚ Internet‚ электронная почта</p>
+                                <p>- Грамотная устная и письменная речь,</p>
+                                <p>- Внимательность, ответственность, коммуникабельность.</p>
+                                <p>- Навыки работы в режиме многозадачности</p>
+                            </div>
+                        </div>
+                        <div class = "vac__wrap">
+                            <a class = "vac__link" href = "javascript:void(0);">Стоматолог</a>
+                            <div class = "vac__desc">
+                                <p>- Высшее образование</p>
+                                <p>- Уверенный пользователь пакет Microsoft Office‚ Internet‚ электронная почта</p>
+                                <p>- Грамотная устная и письменная речь,</p>
+                                <p>- Внимательность, ответственность, коммуникабельность.</p>
+                                <p>- Навыки работы в режиме многозадачности</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Партнеры</h3>
+                    <div class = "partners">
+                        <img src = "images/kerr.png" /><img src = "images/cmd.png" /><img src = "images/sema.png" />
+                    </div>
+                </div>
+                <div class = "col-md-4 col-sm-6">
+                    <p class = "vac__slogan">Присоединяйтесь к команде профессионалов и развивайтесь вместе нами!</p>
+                    <p class = "vac__email">Отправляйте резюме на <a href = "mailto:job@stomcroc.ru">job@stomcroc.ru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<section class = "contacts">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <h2>Как нас найти</h2>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-4">
+                <a href="tel:+74959695086" class="top__phone">+7(495)969-50-86</a>
+                <p>Москва, Перовская, д. 16,<br/>
+                    пн-сб:  09:00 - 21:00<br/>
+                    воскр:  10:00 - 18:00 </p>
+                <h3>Как добраться от метро</h3>
+                <p>От метро "Шоссе Энтузиастов", автобусы 254, 46, 129, 659, 180. </p>
+                <p>От метро "Перово", автобусы 131, 249, 646.<br>
+                    или пешком 15-20 минут.</p>
+                <a class = "contacts__email" href = "mailto:info@stomcroc.ru">info@stomcroc.ru</a>
+                <ul class = "social">
+                    <li><a href = ""><img src = "images/inst.png" /></a></li>
+                    <li><a href = ""><img src = "images/fb.png" /></a></li>
+                </ul>
+            </div>
+            <div class = "col-md-8">
+				<div id = "map"></div>            
+			</div>
+        </div>
+    </div>
+</section>
+
+<footer class = "footer">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-3">
+                <p class = "copyright">Copyright Добрый крокодил, 2018</p>
+            </div>
+            <div class = "col-md-9">
+                <ul class = "bottom__menu">
+                    <li><a href = "">Реквизиты</a></li>
+                    <li><a href = "">Политика конфиденциальности</a></li>
+                    <li><a href = "">Информация для пациентов</a></li>
+                    <li><a href = "">Карта сайта</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.js"></script>
+<script src="plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="plugins/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript" src="js/lemmon-slider.js"></script>
+<script type="text/javascript" src="js/maskedinput.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

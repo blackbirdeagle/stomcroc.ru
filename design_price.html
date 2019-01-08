@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.theme.default.css">
+
+    <title>Цены</title>
+
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+</head>
+<body>
+
+<div class = "overlay"></div>
+
+<div class="popup usagr-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Запись на прием</div>
+    <form method = "POST" action = "">
+        <input type = "text" name = "name" placeholder = "Ваше имя*"/>
+        <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон*"/>
+        <div class="input-group date" id="datetimepicker1">
+            <input type="text" class="form-control dateTime" name = "datetime" id = "dateTime1" placeholder = "Дата и время приема*"/>
+            <span class="input-group-addon">
+			  <span class="glyphicon glyphicon-calendar"></span>
+			</span>
+        </div>
+        <a class = "send_mess" href = "javascript:void(0);">Забронировать</a>
+    </form>
+</div>
+
+<header class = "header">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-9">
+                <a class = "show__menu" href = "javascript:void(0);"><img src = "images/mob.png" /></a>
+                <ul class = "top-menu">
+                    <a class = "close-menu" href = "javascript:void(0);">X</a>
+                    <li><a href = "">Наша клиника</a></li>
+                    <li><a href = "">Акции и скидки</a></li>
+                    <li><a href = "">Услуги</a></li>
+                    <li><a class = "active" href = "">Цены</a></li>
+                    <li><a href = "">Специалисты</a></li>
+                    <li><a href = "">Программа скидок</a></li>
+                    <li><a href = "">Контакты</a></li>
+                </ul>
+            </div>
+            <div class = "col-md-3"><a class = "for_impaired" href = "">Версия для слабовидящих</a></div>
+        </div>
+    </div>
+</header>
+
+<div class = "center__block">
+
+    <section class = "head">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-2 col-sm-4">
+                    <a class = "logo" href = "/"><img src = "images/logo.png" /></a>
+                </div>
+                <div class = "col-md-4 col-sm-8">
+                    <p class = "head__slogan">Семейная стоматология для взрослых и детей в Перово</p>
+                    <p class = "head__subhead">Добрый крокодил</p>
+                </div>
+                <div class = "col-md-3 col-sm-6">
+                    <div class = "order__wrapp">
+                        <a class = "order__button" popup-target = "usagr-pp" href = "javascript:void(0);">Записаться на прием</a>
+                    </div>
+                </div>
+                <div class = "col-md-3 col-sm-6">
+                    <div class = "top__contacts">
+                        <a href = "tel:+74959695086" class = "top__phone">+7(495)969-50-86</a>
+                        <p class = "top_addr">Москва, Перовская, д. 16,<br/>
+                            пн-сб:  09:00 - 21:00<br/>
+                            воскр:  10:00 - 18:00 </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "content">
+        <div class = "content__preview">
+            <img src = "images/p_price.png" />
+        </div>
+        <div class = container>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <ul class = "breadcrumb">
+                        <li><a href = "">Главная</a></li>
+                    </ul>
+                    <h1>Цены</h1>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-8">
+                    <p>Наши цены не кусаются!<br/>
+                        Пожалуйста познакомтесь с нашими ценами на услуги. Все цены указанны в рублях.</p>
+                    <p class = "from__pay">Принимаем к оплате: <img src = "images/mir.png" /><img src = "images/visa.png" /><img src = "images/maestro.png" /><img src = "images/mastercard.png" /></p>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-11">
+                    <div class = "price__list">
+                        <div class = "price__list__category">
+                            <p class = "price__list__category__head">Консультация</p>
+                            <table class = "table">
+                                <tr class = "white">
+                                    <td class = "td__first">Консультация врача-стоматолога</td>
+                                    <td class = "td__last">0</td>
+                                </tr>
+                                <tr class = "gray">
+                                    <td class = "td__first">Консультация врача-стоматолога (повторная)</td>
+                                    <td class = "td__last">0</td>
+                                </tr>
+                                <tr class = "white">
+                                    <td class = "td__first">Совместная консультация специалистов</td>
+                                    <td class = "td__last">0</td>
+                                </tr>
+                                <tr class = "gray">
+                                    <td class = "td__first">Выдача справки о санации</td>
+                                    <td class = "td__last">350</td>
+                                </tr>
+                                <tr class = "white">
+                                    <td class = "td__first">Использование изолирующей системы</td>
+                                    <td class = "td__last">400</td>
+                                </tr>
+                                <tr class = "gray">
+                                    <td class = "td__first">Использование ретрактора</td>
+                                    <td class = "td__last">400</td>
+                                </tr>
+                            </table>
+                            <p class = "price__list__category__head">Анестезия и снимки</p>
+                            <table class = "table">
+                                <tr class = "white">
+                                    <td class = "td__first">Анестезия аппликационная (спрей, гель)</td>
+                                    <td class = "td__last">200</td>
+                                </tr>
+                                <tr class = "gray">
+                                    <td class = "td__first">Анестезия карпульная</td>
+                                    <td class = "td__last">500</td>
+                                </tr>
+                                <tr class = "white">
+                                    <td class = "td__first">Анестезия при беременности и кардиопатии</td>
+                                    <td class = "td__last">700</td>
+                                </tr>
+                                <tr class = "gray">
+                                    <td class = "td__first">Радиовизиографическое исследование - 1 снимок</td>
+                                    <td class = "td__last">250</td>
+                                </tr>
+                                <tr class = "white">
+                                    <td class = "td__first">Радиовизиографическое исследование с печатью</td>
+                                    <td class = "td__last">300</td>
+                                </tr>
+                                <tr class = "gray">
+                                    <td class = "td__first">Ортопантомограмма (снимок панорамный)</td>
+                                    <td class = "td__last">400</td>
+                                </tr>
+                            </table>
+                            <p class = "price__list__category__head">Лечение</p>
+                            <table class = "table">
+                                <tr class = "white">
+                                    <td class = "td__first">Постановка пломбы из светоотверждаемого материала (Charisma)</td>
+                                    <td class = "td__last">2400</td>
+                                </tr>
+                                <tr class = "gray">
+                                    <td class = "td__first">Постановка пломбы из светоотверждаемого материала (Filtek)</td>
+                                    <td class = "td__last">3500</td>
+                                </tr>
+                                <tr class = "white">
+                                    <td class = "td__first">Постановка пломбы из цемента</td>
+                                    <td class = "td__last">1700</td>
+                                </tr>
+                                <tr class = "gray">
+                                    <td class = "td__first">Пломба под коронку</td>
+                                    <td class = "td__last">4250</td>
+                                </tr>
+                                <tr class = "white">
+                                    <td class = "td__first">Временная пломба</td>
+                                    <td class = "td__last">1300</td>
+                                </tr>
+                                <tr class = "gray">
+                                    <td class = "td__first">Снятие старой пломбы</td>
+                                    <td class = "td__last">1400</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class = "contacts">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <h2>Как нас найти</h2>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-4">
+                <a href="tel:+74959695086" class="top__phone">+7(495)969-50-86</a>
+                <p>Москва, Перовская, д. 16,<br/>
+                    пн-сб:  09:00 - 21:00<br/>
+                    воскр:  10:00 - 18:00 </p>
+                <h3>Как добраться от метро</h3>
+                <p>От метро "Шоссе Энтузиастов", автобусы 254, 46, 129, 659, 180. </p>
+                <p>От метро "Перово", автобусы 131, 249, 646.<br>
+                    или пешком 15-20 минут.</p>
+                <a class = "contacts__email" href = "mailto:info@stomcroc.ru">info@stomcroc.ru</a>
+                <ul class = "social">
+                    <li><a href = ""><img src = "images/inst.png" /></a></li>
+                    <li><a href = ""><img src = "images/fb.png" /></a></li>
+                </ul>
+            </div>
+            <div class = "col-md-8">
+				<div id = "map"></div>            
+			</div>
+        </div>
+    </div>
+</section>
+
+<footer class = "footer">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-3">
+                <p class = "copyright">Copyright Добрый крокодил, 2018</p>
+            </div>
+            <div class = "col-md-9">
+                <ul class = "bottom__menu">
+                    <li><a href = "">Реквизиты</a></li>
+                    <li><a href = "">Политика конфиденциальности</a></li>
+                    <li><a href = "">Информация для пациентов</a></li>
+                    <li><a href = "">Карта сайта</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.js"></script>
+<script src="plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="plugins/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript" src="js/lemmon-slider.js"></script>
+<script type="text/javascript" src="js/maskedinput.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
